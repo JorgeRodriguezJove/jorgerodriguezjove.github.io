@@ -2997,6 +2997,15 @@ input, select, textarea {
 				margin: 0 0 2em 0;
 			}
 
+			.spotlight .image {
+			display: inline-block;
+			margin-left: 4em;
+			padding: 0.65em;
+			/*border-radius: 100%;
+			border: solid 1px;*/
+			}
+
+			/*
 		.spotlight .image {
 			display: inline-block;
 			margin-left: 4em;
@@ -3009,7 +3018,7 @@ input, select, textarea {
 				display: block;
 				border-radius: 100%;
 				width: 16em;
-			}
+			}*/
 
 		@media screen and (max-width: 980px) {
 
@@ -3066,6 +3075,114 @@ input, select, textarea {
 		}
 
 	.spotlight .image {
+		border-color: rgba(255, 255, 255, 0.35);
+	}
+
+	/* spotlightDer */
+
+	.spotlightDer {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		margin: 0 0 2em 0;
+	}
+
+		.spotlightDer .content {
+			-moz-flex: 1;
+			-webkit-flex: 1;
+			-ms-flex: 1;
+			flex: 1;
+		}
+
+			.spotlightDer .content > :last-child {
+				margin-bottom: 0;
+			}
+
+			.spotlightDer .content header.major {
+				margin: 0 0 2em 0;
+			}
+
+			.spotlightDer .image {
+			display: inline-block;
+			margin-right: 12em;
+			
+		}
+
+			/*
+		.spotlightDer .image {
+			display: inline-block;
+			margin-right: 12em;
+			padding: 0.65em;
+			border-radius: 100%;
+			border: solid 1px;
+		}
+
+			.spotlightDer .image img {
+				display: block;
+				border-radius: 100%;
+				width: 16em;
+			}*/
+
+		@media screen and (max-width: 980px) {
+
+			.spotlightDer {
+				-moz-flex-direction: column-reverse;
+				-webkit-flex-direction: column-reverse;
+				-ms-flex-direction: column-reverse;
+				flex-direction: column-reverse;
+				text-align: center;
+			}
+
+				.spotlightDer .content {
+					-moz-flex: 0 1 auto;
+					-webkit-flex: 0 1 auto;
+					-ms-flex: 0 1 auto;
+					flex: 0 1 auto;
+					width: 100%;
+				}
+
+					.spotlightDer .content header.major h2:after {
+						margin-left: auto;
+						margin-right: auto;
+					}
+
+					.spotlightDer .content .actions {
+						-moz-justify-content: center;
+						-webkit-justify-content: center;
+						-ms-justify-content: center;
+						justify-content: center;
+						width: calc(100% + 1em);
+					}
+
+				.spotlightDer .image {
+					-moz-flex: 0 1 auto;
+					-webkit-flex: 0 1 auto;
+					-ms-flex: 0 1 auto;
+					flex: 0 1 auto;
+					margin-left: 0;
+					margin-bottom: 2em;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.spotlightDer .image {
+				padding: 0.35em;
+			}
+
+				.spotlightDer .image img {
+					width: 12em;
+				}
+
+		}
+
+	.spotlightDer .image {
 		border-color: rgba(255, 255, 255, 0.35);
 	}
 
@@ -3580,6 +3697,10 @@ input, select, textarea {
 			border-color: #dddddd;
 		}
 
+		#main .spotlightDer .image {
+			border-color: #dddddd;
+		}		
+
 		#main > .main {
 			padding: 5em 5em 3em 5em ;
 			border-top: solid 1px #dddddd;
@@ -3678,6 +3799,16 @@ input, select, textarea {
 						}
 
 		}
+
+
+		.btn{
+		background-color: Coral;
+		}
+
+ /*Darker background on mouse-over */
+	.btn:hover {
+	  background-color: RoyalBlue;
+	}
 
 /* Footer */
 
