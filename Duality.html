@@ -1,0 +1,208 @@
+ramm<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Doom - Duality</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">BACK TO HOME</a></h1>
+					</header>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>DOOM 2 CUSTOM MAP "Duality"</h2>
+								<p>LEVEL DESIGN</p>
+							</div>
+						</header>
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									<span class="image main"><img src="images/DualityMap.jpg" alt="" /></span>
+								<!--Intro-->
+								<h3 class = "major">PROJECT SUMMARY</h3>
+
+								<p>
+									"Duality" is a custom map made for Doom 2. Originally, I was going to make this map for a game jam from Steve Lee about nonlinearity but I didn't have the time at that moment so I've decided to do it now. 
+								</p>
+
+								The main idea is:
+								<ul>
+										<li>At the beginning of the level, the player takes either the left or right path.</li>
+										<li>Each path leads to a key and activates a trap that affects the whole map.</li>
+										<li>No matter which order the player takes, the second path will always be harder than the first.</li>
+										<ul>
+											<li>Left side lowers pillars that have enemies and items.</li>
+											<li>Right side opens vents in the ceiling and floor with enemies, items, and lava pits.</li>
+										</ul>
+										
+								</ul>
+
+								<!--Links-->
+								<p>Here's the itchio link where the map is hosted and a Youtube video showcasing a playthrough of the level:</p>
+								
+								<!--
+
+								<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+									<div class="wp-block-embed__wrapper">
+										<div class="nv-iframe-embed">	
+											<iframe loading="lazy" title="Hopebringers Launch Trailer" width="1200" height="675" src="https://www.youtube.com/embed/4i-JDdWvMos?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">	
+											</iframe>	
+										</div>
+									</div>
+								</figure>
+								<div style = "text-align:center">
+										<iframe frameborder="0" src="https://itch.io/embed/2922114?bg_color=240303&amp;fg_color=d9d9d9" width="552" height="167"><a href="https://jorgerodriguezdev.itch.io/duality">[Doom 2 WAD] - Duality by JorgeRodriguezDev</a></iframe>
+								</div>
+									
+								-->
+
+
+								<!--Desarrollo-->
+								<h3 class = "major">DESIGN PROCESS</h3>
+
+
+								<ol>
+										<li>Brainstorming and writing thoughts, ideas, elements to use, possible issues...</li>
+										<li>Drawing a rough sketch  of the initial layout and checking if the mechanics work in the editor.</li>
+										<li>First implementation in the editor. The level can be played from start to finish.</li>
+										<li>Multiple iterations in the editor. Focus on getting the shapes and the overall progression right. </li>
+										<li>First playtest. Fixed found issues and applied feedback. Balanced enemies and weapon progression.</li>
+										<li>Second playtest + General polish (bugs, texture and lighting pass, small tweaks) and, publishing the level</li>
+								</ol>
+
+								<p>1. First, I started by writing my thoughts and ideas about the level. 
+								I started by setting clear goals and objectives for the map and then did some brainstorming to come up with ideas for the map. 
+								When the main concept was decided, I wrote in a text note all the elements, ideas, and problems I could think of and also described the sequence of the level as I initially imagined it.
+								</p>
+
+								<p>2. After that, I moved to Photoshop to translate that sequence into a quick sketch. The goal of this sketch is to quickly have some visual representation of the level. Right after that, I moved into the engine.
+								This is my first time doing a Doom map so first of all I needed to make sure that I was able to implement the ideas I had for the map. In this case, the things I was more interested are:
+								</p>
+
+								<ul>
+										<li>Basic interactions (doors, switches, elevators)</li>
+										<li>Walls with windows (To show key aspects of the map)</li>
+										<li>Pillars that lower and have enemies and other elements (Effect of left path)</li>
+										<li>Sliding vents in the floor and ceiling with lava and enemies (Effect of right path)</li>
+								</ul>
+								
+								<p>Everything was working except for the sliding doors with the lava. 
+								Due to my lack of familiarity with the engine, I quickly realized that this wasn't as straightforward as the previous stuff. 
+								After some research, I found a way to achieve this by using an updated version of the editor that allows for 3D floors + writing my own scripts to make the vents move down. 
+								While I was researching how to solve this issue, I was already thinking of other possibilities to make the map work but thankfully it didn't reach that point.
+								</p>
+
+								<p>3. With this solved I moved into the editor and did a quick and simple version of the sketch with the goal of having all the rooms placed and the level playable from start to finish. 
+								</p>
+
+								<div class="ImageUnderText">
+									<span class="image main"><img src="images/Initial Sketch.png" alt="" /></span>
+									<p>Rough initial sketch</p>
+								</div>
+								
+
+								<p>4. Thanks to the level being fully playable I could do some playtests on my own and already found some issues (both expected and unexpected) 
+								First I focused on the overall layout and flow of the level and after some iterations started working on the encounters and the pickups.
+								</p>
+
+								<p>5. When I was comfortable with the state of the level I asked some friends to playtest it. The main goal was to make sure that the concept of the level was easy to understand.
+								This however was not entirely the case. The left path was harder for the testers to understand due to three main reasons:
+								</p>
+								
+								<div class="ImageUnderText">
+									<span class="image main"><img src="images/Analysis.jpg" alt="" /></span>
+									<p>Old version of the left path</p>
+								</div>
+
+
+
+								<ol>
+										<li>The first time players travel through the area (yellow line) they don't pay attention to the pillars because they don't stand out as important elements.</li>
+										<li>The button that lowers the pillars is in the middle of a room creating an ambush. Players associated the button with that ambush in particular and didn't think of the pillars outside that room.</li>
+										<li>When the players go back to the previous rooms (end of the blue line) they don't understand that they have already been here. The room is not recognizable enough + they don't realize that the enemies are new due to the pillars being down.</li>
+								</ol>
+
+								<p>With this feedback in mind, I reworked the left side to address the issues. 
+								First of all, I made sure that the pillars stand out more before and after they come down by changing the textures of the near walls and the interior of the pillars. Also, when the pillars are down, they stick out a bit above the ground to better show that they were in that place before. 
+								Then I reordered the rooms and changed the progression so players understand better where they come back after dropping the pillars and clearly showcase that this effect is present in all the map.
+								</p>
+
+								<p>6. After this, I did some final playtests and continued asking for as much feedback as I could, tweaked some small stuff, fixed all the bugs I could find, and considered it finished.
+								</p>
+
+								
+								<div class="ImageUnderText">
+									<img src="images/Gif progress final.gif" alt="" /></span>
+									<p>Timelapse of the map in progress</p>
+								</div>
+								
+								<p></p>
+								<h3 class = "major">RETROSPECTIVE</h3>
+
+								<p>As a general idea, I think the concept works really well. Not only works as a way to dynamically adjust the difficulty as the player progresses through the levels but also incentivizes the player to replay the level and try it in the opposite order.
+								There are however some things that are not working as well as they could:
+								</p>
+
+								<ul>
+										<li>Paths could be more unique. This is mainly because it's my first time doing a Doom map and I don't really know the limitations and possibilities of the engine but I feel that the pillars and the vents are very similar. Both change the level in a vertical way and show enemies and items. My personal opinion is that they are different enough for it to work, but I would like to explore the concept again in the future with more different challenges and more drastic ways to change the map.</li>
+										<li>One problem that I found with my approach to this idea is that hunting for secrets is tedious. When players have played both paths and have opened the doors, if they decide to return to the first path to search for the secrets that they missed due to the second path being inactive, they are going to backtrack with almost no engagement. In the best case, they are going to find a few enemies that don't really present a challenge on their own (as they were meant to be fought with the original enemies of that path). In this case, this is very obvious in the left path which doesn't add new enemies when the vents from the second path are opened.</li>
+								</ul>
+
+								<p>Leaving those problems aside, one of the things that surprised me the most was how hard was to convey to the players how the left path worked. The vents on the right path are very "gamey" and obvious so all of the testers quickly understood that they were a trap. The pillars however didn't stand out at all for any of the initial testers (and even when the trap  had already been activated some of them didn't fully realize that it was something general in the map). I was already aware that I was biased and that my judgment  on this wasn't to be trusted, even though they looked obvious to me I knew that it was because I was already aware of how they worked. Fortunately, I could ask enough people to play the game to make multiple iterations and improve the chances of players understanding how it works and the latest playtests showed this improvement which was really great to see.</p>
+
+								
+								<p>With all that said, it was really fun to work on the project and it was also very different to what I'm used to. The Doom editor was a bit weird to figure out initially, but in the end, I found myself going through the level and doing rooms at a very fast pace which was very rewarding.
+								Now that the map is done I'll move to a different project but I may come back to Doom to make more maps in the future</p>
+								
+								</div>
+							</div>
+
+					</section>
+
+
+
+
+
+					<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<div class="spotlightProf">
+							<ul class="contact">
+								<li class="icon solid fa-envelope"><a href="mailto: jorgerodriguezdev@gmail.com">jorgerodriguezdev@gmail.com</a></li>
+								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/jorgerodriguezjove/">Linkedin Profile</a></li>
+								<li class="icon brands fa-itch-io"><a href="https://jorgerodriguezdev.itch.io/">Itchio Page</a></i>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Jorge Rodriguez Jove.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
