@@ -61,7 +61,7 @@ ramm<!DOCTYPE HTML>
 								<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
 									<div class="wp-block-embed__wrapper">
 										<div class="nv-iframe-embed">	
-											<iframe loading="lazy" title="Hopebringers Launch Trailer" width="1200" height="675" src="https://www.youtube.com/embed/tQMqpqvdyh4?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">	
+											<iframe loading="lazy" title="Duality Walkthrough video" width="1200" height="675" src="https://www.youtube.com/embed/AFRQolq3-_s?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">	
 											</iframe>	
 										</div>
 									</div>
@@ -76,39 +76,20 @@ ramm<!DOCTYPE HTML>
 								<!--Desarrollo-->
 								<h3 class = "major">DESIGN PROCESS</h3>
 
-
 								<ol>
-										<li>Brainstorming and writing thoughts, ideas, elements to use, possible issues...</li>
-										<li>Drawing a rough sketch  of the initial layout and checking if the mechanics work in the editor.</li>
-										<li>First implementation in the editor. The level can be played from start to finish.</li>
-										<li>Multiple iterations in the editor. Focus on getting the shapes and the overall progression right. </li>
-										<li>First playtest. Fixed found issues and applied feedback. Balanced enemies and weapon progression.</li>
-										<li>Second playtest + General polish (bugs, texture, and lighting pass, small tweaks) and, publishing the level</li>
+										<li>Brainstorming and writing ideas, possible issues, elements to use, and goals of the level</li>
+										<li>Drawing a rough sketch of the initial layout</li>
+										<li>First implementation in the editor. The level can already be played from start to finish.</li>
+										<li>Multiple iterations in the editor. Focus on getting the shapes and the overall progression right.</li>
+										<li>At this point, I playtest with other people and iterate based on the feedback and issues I can find by watching them play.</li>
+										<li>Final tweaks, polishing, and publishing the level.</li>
 								</ol>
 
-								<p>1. First, I started by writing my thoughts and ideas about the level. 
-								I started by setting clear goals and objectives for the map and then did some brainstorming to come up with ideas for the map. 
-								When the main concept was decided, I wrote in a text note all the elements, ideas, and problems I could think of and also described the sequence of the level as I initially imagined it.
+								<p>1.First, I started by setting clear goals for the map and deciding the core mechanics and main concept.
+								I also wrote all the possible ideas and issues I could find and also describing the sequence of the level as I initially imagined it.  
 								</p>
 
-								<p>2. After that, I moved to Photoshop to translate that sequence into a quick sketch. The goal of this sketch is to quickly have some visual representation of the level. Right after that, I moved into the engine.
-								This is my first time doing a Doom map so first of all I needed to make sure that I was able to implement the ideas I had for the map. In this case, the things I was more interested are:
-								</p>
-
-								<ul>
-										<li>Basic interactions (doors, switches, elevators)</li>
-										<li>Walls with windows (To show key aspects of the map)</li>
-										<li>Pillars that lower and have enemies and other elements (Effect of left path)</li>
-										<li>Sliding vents in the floor and ceiling with lava and enemies (Effect of right path)</li>
-								</ul>
-								
-								<p>Everything was working except for the sliding doors with the lava. 
-								Due to my lack of familiarity with the engine, I quickly realized that this wasn't as straightforward as the previous stuff. 
-								After some research, I found a way to achieve this by using an updated version of the editor that allows for 3D floors + writing my own scripts to make the vents move down. 
-								While I was researching how to solve this issue, I was already thinking of other possibilities to make the map work but thankfully it didn't reach that point.
-								</p>
-
-								<p>3. With this solved I moved into the editor and did a quick and simple version of the sketch with the goal of having all the rooms placed and the level playable from start to finish. 
+								<p>2.With these notes in mind, I moved to Photoshop and did a quick and rough sketch. At this stage, I just want a basic top-down to translate into the editor
 								</p>
 
 								<div class="ImageUnderText">
@@ -116,34 +97,72 @@ ramm<!DOCTYPE HTML>
 									<p>Rough initial sketch</p>
 								</div>
 								
-
-								<p>4. Thanks to the level being fully playable I could do some playtests on my own and already found some issues (both expected and unexpected) 
-								First I focused on the overall layout and flow of the level and after some iterations started working on the encounters and the pickups.
-								</p>
-
-								<p>5. When I was comfortable with the state of the level I asked some friends to playtest it. The main goal was to make sure that the concept of the level was easy to understand.
-								This however was not entirely the case. The left path was harder for the testers to understand due to three main reasons:
-								</p>
+								<!--
 								
-								<div class="ImageUnderText">
-									<span class="image main"><img src="images/Analysis.jpg" alt="" /></span>
-									<p>Old version of the left path</p>
-								</div>
+								<ul>
+										<li>Basic interactions (doors, switches, elevators)</li>
+										<li>Walls with windows (To show key aspects of the map)</li>
+										<li>Pillars that lower and have enemies and other elements (Effect of left path)</li>
+										<li>Sliding vents in the floor and ceiling with lava and enemies (Effect of right path)</li>
+								</ul>
+								
+								
+								<p>Everything was working except for the sliding doors with the lava. 
+								Due to my lack of familiarity with the engine, I quickly realized that this wasn't as straightforward as the previous stuff. 
+								After some research, I found a way to achieve this by using an updated version of the editor that allows for 3D floors + writing my own scripts to make the vents move down. 
+								While I was researching how to solve this issue, I was already thinking of other possibilities to make the map work but thankfully it didn't reach that point.
+								</p>
 
+								-->
 
+								<p>3 & 4 After solving some initial problems and making sure that the main mechanics were working, I focused on making that initial layout playable in the editor as soon as possible.
+								At this stage, the enemies and items are placeholders, and I’m focussing on getting the sequence and progression of the level right. 
+								</p>
 
+								<!--
+								BREAKDOWN DEL NIVEL
+								-->
+						
+								<p>Once the level was working, I started doing some playtests with friends. Quickly I realized that I had two main problems:
+								</p>
+
+								
 								<ol>
 										<li>The first time players travel through the area (yellow line) they don't pay attention to the pillars because they don't stand out as important elements.</li>
 										<li>The button that lowers the pillars is in the middle of a room creating an ambush. Players associated the button with that ambush in particular and didn't think of the pillars outside that room.</li>
 										<li>When the players go back to the previous rooms (end of the blue line) they don't understand that they have already been here. The room is not recognizable enough + they don't realize that the enemies are new due to the pillars being down.</li>
 								</ol>
 
-								<p>With this feedback in mind, I reworked the left side to address the issues. 
-								First of all, I made sure that the pillars stand out more before and after they come down by changing the textures of the near walls and the interior of the pillars. Also, when the pillars are down, they stick out a bit above the ground to better show that they were in that place before. 
-								Then I reordered the rooms and changed the progression so players understand better where they come back after dropping the pillars and clearly showcase that this effect is present in all the map.
+
+								<div class="ImageUnderText">
+									<span class="image main"><img src="images/Analysis.jpg" alt="" /></span>
+									<p>Old version of the left path</p>
+								</div>
+
+
+								<p>The problem with the pillars came down to players not noticing the different textures before activating the switch + thinking that the pillars were only a thing for the button room.
+								I tried multiple things before changing the textures but it wasn’t enough.
+								I kept trying to use the same texture because it fit better with the overall visual style of the level, but in the end, I decided that it was best to go for something more dramatic that would surely catch the player's attention.
 								</p>
 
-								<p>6. After this, I did some final playtests and continued asking for as much feedback as I could, tweaked some small stuff, fixed all the bugs I could find, and considered it finished.
+								<div class="ImageUnderText">
+									<span class="image main"><img src="images/Analysis.jpg" alt="" /></span>
+									<p>Comparison between old pillars and final</p>
+								</div>
+
+								<p>The problem with the confusion on the way back was easier to address.
+								I created a new room and tried to make it stand out so it could work as an anchor in the middle of the path.
+								To do that I created a round room with distinct textures and lightning to make it stand out by using new shapes, colors, and lightning.
+								I decided also to move the super shotgun to this spot and place a Cacoon demon (which I’m using as harder enemies) to make it as memorable as possible for the player (it also has the bonus of leaving a corpse which will make the player realize that they were already here).  
+								</p>
+
+								<div class="ImageUnderText">
+									<span class="image main"><img src="images/Analysis.jpg" alt="" /></span>
+									<p>Final state of room where the path loops back</p>
+								</div>
+
+
+								<p>With these two things in mind, I remade the left side (while trying to throw away as little as possible) And after some final playtests and tweaks I decided it was time to stop iterating on it and called it finished.
 								</p>
 
 								
@@ -151,7 +170,8 @@ ramm<!DOCTYPE HTML>
 									<img src="images/Gif progress final.gif" alt="" /></span>
 									<p>Timelapse of the map in progress</p>
 								</div>
-								
+
+
 								<p></p>
 								<h3 class = "major">RETROSPECTIVE</h3>
 
